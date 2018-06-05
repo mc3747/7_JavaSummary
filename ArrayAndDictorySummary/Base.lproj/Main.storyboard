@@ -22,22 +22,38 @@
                                 <rect key="frame" x="16" y="64" width="111" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81568627449999997" green="0.84705882349999995" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="遍历测试"/>
+                                <state key="normal" title="数组遍历测试"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwU-Yl-sxC">
-                                <rect key="frame" x="245" y="64" width="109" height="30"/>
+                                <rect key="frame" x="16" y="112" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="最值测试">
+                                <state key="normal" title="数组最值测试">
                                     <color key="titleColor" red="1" green="0.18992286219999999" blue="0.29695561510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGx-lc-mNA">
-                                <rect key="frame" x="126" y="150" width="119" height="30"/>
+                                <rect key="frame" x="16" y="164" width="111" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.86961168050000004" green="0.90199393029999997" blue="0.91037303209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="测试排序">
+                                <state key="normal" title="数组测试排序">
                                     <color key="titleColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3X-i0-xF4">
+                                <rect key="frame" x="242" y="145" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72228884299999996" green="0.14017974450000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="字典排序测试">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAH-hR-k0P">
+                                <rect key="frame" x="242" y="81" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="字典最值测试">
+                                    <color key="titleColor" red="0.72228884299999996" green="0.14017974450000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                         </subviews>
@@ -48,6 +64,8 @@
                         <outlet property="testButton1" destination="hDs-Lb-Hdg" id="Fhf-gR-m5b"/>
                         <outlet property="testButton2" destination="LwU-Yl-sxC" id="TH2-ab-3VP"/>
                         <outlet property="testButton3" destination="gGx-lc-mNA" id="8j9-Wp-I26"/>
+                        <outlet property="testButton4" destination="JAH-hR-k0P" id="R9Q-gY-yRI"/>
+                        <outlet property="testButton5" destination="g3X-i0-xF4" id="rCe-xH-1RE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

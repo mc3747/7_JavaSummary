@@ -10,11 +10,15 @@
 #import "ArrayTraverseManager.h"
 #import "ArrayExtremeManager.h"
 #import "ArraySortManager.h"
+#import "DicExtremeManager.h"
+#import "DicSortManager.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *testButton1;
 @property (weak, nonatomic) IBOutlet UIButton *testButton2;
 @property (weak, nonatomic) IBOutlet UIButton *testButton3;
+@property (weak, nonatomic) IBOutlet UIButton *testButton4;
+@property (weak, nonatomic) IBOutlet UIButton *testButton5;
 
 @end
 
@@ -28,6 +32,10 @@
     [_testButton2 addTarget:self action:@selector(test2) forControlEvents:UIControlEventTouchUpInside];
     
     [_testButton3 addTarget:self action:@selector(test3) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_testButton4 addTarget:self action:@selector(test4) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_testButton5 addTarget:self action:@selector(test5) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -75,4 +83,18 @@
 {
     return (int)(from + (arc4random() % (to - from + 1)));
 };
+
+#pragma mark -  4，字典最值
+- (void)test4 {
+    NSDictionary *dic = @{@"小A":@"1.89",@"小B":@"1.95",@"小C":@"1.77",@"小D":@"1.72"};
+    NSString *maxKey;
+    NSString *maxValue;
+    [DicExtremeManager extreme_1_WithDic:dic maxKey:&maxKey maxValue:&maxValue];
+    NSLog(@"最大的key：%@，最大的value：%@",maxKey,maxValue);
+}
+
+#pragma mark -  5，字典排序
+- (void)test5 {
+    
+}
 @end

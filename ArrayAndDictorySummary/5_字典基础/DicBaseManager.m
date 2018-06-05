@@ -91,5 +91,6 @@ NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1
  
 /*4，所有values */
     NSLog(@"%@", [dic allValues]);
+    
 }
 @end

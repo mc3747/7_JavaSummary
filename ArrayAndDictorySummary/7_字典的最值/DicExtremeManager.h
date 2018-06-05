@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface DicExtremeManager : NSObject
-
++ (void)extreme_1_WithDic:(NSDictionary *)dic
+                   maxKey:(NSString **)maxKey
+                 maxValue:(NSString **)maxValue;
 @end
