@@ -24,6 +24,8 @@
 		427F207A20C683B600F511B0 /* DicSortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F207920C683B600F511B0 /* DicSortManager.m */; };
 		42960F7A20C4C24200A798D0 /* ArrayTraverseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42960F7920C4C24200A798D0 /* ArrayTraverseManager.m */; };
 		42960F8420C4E41A00A798D0 /* ArraySortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42960F8320C4E41A00A798D0 /* ArraySortManager.m */; };
+		429D333320C7722F006EA211 /* SortSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D333220C7722F006EA211 /* SortSummary.m */; };
+		429D333620C7729A006EA211 /* SLPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D333420C7729A006EA211 /* SLPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		42960F7920C4C24200A798D0 /* ArrayTraverseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTraverseManager.m; sourceTree = "<group>"; };
 		42960F8220C4E41A00A798D0 /* ArraySortManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArraySortManager.h; sourceTree = "<group>"; };
 		42960F8320C4E41A00A798D0 /* ArraySortManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArraySortManager.m; sourceTree = "<group>"; };
+		429D333120C7722F006EA211 /* SortSummary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortSummary.h; sourceTree = "<group>"; };
+		429D333220C7722F006EA211 /* SortSummary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortSummary.m; sourceTree = "<group>"; };
+		429D333420C7729A006EA211 /* SLPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPerson.m; sourceTree = "<group>"; };
+		429D333520C7729A006EA211 /* SLPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPerson.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 				427F200C20C611F400F511B0 /* 6_字典的遍历 */,
 				427F201020C6153A00F511B0 /* 7_字典的最值 */,
 				427F207720C6820800F511B0 /* 8_字典的排序 */,
+				429D333020C771F4006EA211 /* 9_排序小结 */,
 				42011F0920C0D9BE009F607C /* TimeManager.h */,
 				42011F0A20C0D9BE009F607C /* TimeManager.m */,
 				42011EDA20C0CFE3009F607C /* Main.storyboard */,
@@ -239,6 +246,17 @@
 				427F207920C683B600F511B0 /* DicSortManager.m */,
 			);
 			path = "8_字典的排序";
+			sourceTree = "<group>";
+		};
+		429D333020C771F4006EA211 /* 9_排序小结 */ = {
+			isa = PBXGroup;
+			children = (
+				429D333520C7729A006EA211 /* SLPerson.h */,
+				429D333420C7729A006EA211 /* SLPerson.m */,
+				429D333120C7722F006EA211 /* SortSummary.h */,
+				429D333220C7722F006EA211 /* SortSummary.m */,
+			);
+			path = "9_排序小结";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,8 +397,10 @@
 				42960F7A20C4C24200A798D0 /* ArrayTraverseManager.m in Sources */,
 				42011EE420C0CFE5009F607C /* main.m in Sources */,
 				42011F0B20C0D9BE009F607C /* TimeManager.m in Sources */,
+				429D333320C7722F006EA211 /* SortSummary.m in Sources */,
 				42960F8420C4E41A00A798D0 /* ArraySortManager.m in Sources */,
 				427F200F20C6123700F511B0 /* DicTraverseManager.m in Sources */,
+				429D333620C7729A006EA211 /* SLPerson.m in Sources */,
 				427F207A20C683B600F511B0 /* DicSortManager.m in Sources */,
 				42011ED620C0CFE3009F607C /* AppDelegate.m in Sources */,
 			);

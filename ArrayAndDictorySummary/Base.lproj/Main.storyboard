@@ -56,6 +56,14 @@
                                     <color key="titleColor" red="0.72228884299999996" green="0.14017974450000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ru4-c0-qRl">
+                                <rect key="frame" x="125" y="253" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.087506058469999995" green="0.79567833129999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="模型排序">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,6 +74,7 @@
                         <outlet property="testButton3" destination="gGx-lc-mNA" id="8j9-Wp-I26"/>
                         <outlet property="testButton4" destination="JAH-hR-k0P" id="R9Q-gY-yRI"/>
                         <outlet property="testButton5" destination="g3X-i0-xF4" id="rCe-xH-1RE"/>
+                        <outlet property="testButton6" destination="ru4-c0-qRl" id="Ldc-27-O7V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

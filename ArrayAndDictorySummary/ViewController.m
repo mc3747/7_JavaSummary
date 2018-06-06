@@ -12,6 +12,7 @@
 #import "ArraySortManager.h"
 #import "DicExtremeManager.h"
 #import "DicSortManager.h"
+#import "SortSummary.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *testButton1;
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *testButton3;
 @property (weak, nonatomic) IBOutlet UIButton *testButton4;
 @property (weak, nonatomic) IBOutlet UIButton *testButton5;
+@property (weak, nonatomic) IBOutlet UIButton *testButton6;
 
 @end
 
@@ -36,6 +38,8 @@
     [_testButton4 addTarget:self action:@selector(test4) forControlEvents:UIControlEventTouchUpInside];
     
     [_testButton5 addTarget:self action:@selector(test5) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_testButton6 addTarget:self action:@selector(test6) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -96,5 +100,9 @@
 #pragma mark -  5，字典排序
 - (void)test5 {
     
+}
+#pragma mark -  6，模型排序
+- (void)test6 {
+    [SortSummary sortModelDemo];
 }
 @end
