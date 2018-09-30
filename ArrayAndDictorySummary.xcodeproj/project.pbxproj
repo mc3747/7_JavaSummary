@@ -24,6 +24,10 @@
 		427F207A20C683B600F511B0 /* DicSortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F207920C683B600F511B0 /* DicSortManager.m */; };
 		42960F7A20C4C24200A798D0 /* ArrayTraverseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42960F7920C4C24200A798D0 /* ArrayTraverseManager.m */; };
 		42960F8420C4E41A00A798D0 /* ArraySortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42960F8320C4E41A00A798D0 /* ArraySortManager.m */; };
+		429B14EA2160BA0C00F595FC /* MCDataSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14E52160BA0B00F595FC /* MCDataSafety.m */; };
+		429B14EB2160BA0C00F595FC /* MCDataNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14E62160BA0B00F595FC /* MCDataNull.m */; };
+		429B14EC2160BA0C00F595FC /* MCDataJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14E72160BA0B00F595FC /* MCDataJudge.m */; };
+		429B14ED2160BA0C00F595FC /* MCDataConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14E92160BA0C00F595FC /* MCDataConversion.m */; };
 		429D333320C7722F006EA211 /* SortSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D333220C7722F006EA211 /* SortSummary.m */; };
 		429D333620C7729A006EA211 /* SLPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D333420C7729A006EA211 /* SLPerson.m */; };
 /* End PBXBuildFile section */
@@ -80,6 +84,14 @@
 		42960F7920C4C24200A798D0 /* ArrayTraverseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTraverseManager.m; sourceTree = "<group>"; };
 		42960F8220C4E41A00A798D0 /* ArraySortManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArraySortManager.h; sourceTree = "<group>"; };
 		42960F8320C4E41A00A798D0 /* ArraySortManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArraySortManager.m; sourceTree = "<group>"; };
+		429B14E22160BA0B00F595FC /* MCDataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDataConversion.h; sourceTree = "<group>"; };
+		429B14E32160BA0B00F595FC /* MCDataNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDataNull.h; sourceTree = "<group>"; };
+		429B14E42160BA0B00F595FC /* MCDataJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDataJudge.h; sourceTree = "<group>"; };
+		429B14E52160BA0B00F595FC /* MCDataSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataSafety.m; sourceTree = "<group>"; };
+		429B14E62160BA0B00F595FC /* MCDataNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataNull.m; sourceTree = "<group>"; };
+		429B14E72160BA0B00F595FC /* MCDataJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataJudge.m; sourceTree = "<group>"; };
+		429B14E82160BA0B00F595FC /* MCDataSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDataSafety.h; sourceTree = "<group>"; };
+		429B14E92160BA0C00F595FC /* MCDataConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataConversion.m; sourceTree = "<group>"; };
 		429D333120C7722F006EA211 /* SortSummary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortSummary.h; sourceTree = "<group>"; };
 		429D333220C7722F006EA211 /* SortSummary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortSummary.m; sourceTree = "<group>"; };
 		429D333420C7729A006EA211 /* SLPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPerson.m; sourceTree = "<group>"; };
@@ -136,6 +148,7 @@
 			children = (
 				42011ED720C0CFE3009F607C /* ViewController.h */,
 				42011ED820C0CFE3009F607C /* ViewController.m */,
+				429B14E12160B9CD00F595FC /* DataRelated */,
 				427F201420C619B000F511B0 /* 1_数组的基础 */,
 				42011F0C20C0FAFC009F607C /* 2_数组的遍历 */,
 				427F201620C61A5500F511B0 /* 3_数组的最值:求和:平均值 */,
@@ -246,6 +259,21 @@
 				427F207920C683B600F511B0 /* DicSortManager.m */,
 			);
 			path = "8_字典的排序";
+			sourceTree = "<group>";
+		};
+		429B14E12160B9CD00F595FC /* DataRelated */ = {
+			isa = PBXGroup;
+			children = (
+				429B14E22160BA0B00F595FC /* MCDataConversion.h */,
+				429B14E92160BA0C00F595FC /* MCDataConversion.m */,
+				429B14E42160BA0B00F595FC /* MCDataJudge.h */,
+				429B14E72160BA0B00F595FC /* MCDataJudge.m */,
+				429B14E32160BA0B00F595FC /* MCDataNull.h */,
+				429B14E62160BA0B00F595FC /* MCDataNull.m */,
+				429B14E82160BA0B00F595FC /* MCDataSafety.h */,
+				429B14E52160BA0B00F595FC /* MCDataSafety.m */,
+			);
+			path = DataRelated;
 			sourceTree = "<group>";
 		};
 		429D333020C771F4006EA211 /* 9_排序小结 */ = {
@@ -392,6 +420,7 @@
 				427F207620C66F4900F511B0 /* DicBaseManager.m in Sources */,
 				427F201320C6156D00F511B0 /* DicExtremeManager.m in Sources */,
 				427F201920C61A5500F511B0 /* ArrayExtremeManager.m in Sources */,
+				429B14ED2160BA0C00F595FC /* MCDataConversion.m in Sources */,
 				427F201C20C61AB900F511B0 /* ArrayBaseManager.m in Sources */,
 				42011ED920C0CFE3009F607C /* ViewController.m in Sources */,
 				42960F7A20C4C24200A798D0 /* ArrayTraverseManager.m in Sources */,
@@ -399,8 +428,11 @@
 				42011F0B20C0D9BE009F607C /* TimeManager.m in Sources */,
 				429D333320C7722F006EA211 /* SortSummary.m in Sources */,
 				42960F8420C4E41A00A798D0 /* ArraySortManager.m in Sources */,
+				429B14EC2160BA0C00F595FC /* MCDataJudge.m in Sources */,
 				427F200F20C6123700F511B0 /* DicTraverseManager.m in Sources */,
 				429D333620C7729A006EA211 /* SLPerson.m in Sources */,
+				429B14EB2160BA0C00F595FC /* MCDataNull.m in Sources */,
+				429B14EA2160BA0C00F595FC /* MCDataSafety.m in Sources */,
 				427F207A20C683B600F511B0 /* DicSortManager.m in Sources */,
 				42011ED620C0CFE3009F607C /* AppDelegate.m in Sources */,
 			);
