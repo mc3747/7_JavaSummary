@@ -30,6 +30,7 @@
 		429B14ED2160BA0C00F595FC /* MCDataConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14E92160BA0C00F595FC /* MCDataConversion.m */; };
 		429D333320C7722F006EA211 /* SortSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D333220C7722F006EA211 /* SortSummary.m */; };
 		429D333620C7729A006EA211 /* SLPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D333420C7729A006EA211 /* SLPerson.m */; };
+		42E42186228D557000DBC2E4 /* ArrayDeduplicateManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E42185228D557000DBC2E4 /* ArrayDeduplicateManger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		429D333220C7722F006EA211 /* SortSummary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortSummary.m; sourceTree = "<group>"; };
 		429D333420C7729A006EA211 /* SLPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPerson.m; sourceTree = "<group>"; };
 		429D333520C7729A006EA211 /* SLPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPerson.h; sourceTree = "<group>"; };
+		42E42184228D557000DBC2E4 /* ArrayDeduplicateManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayDeduplicateManger.h; sourceTree = "<group>"; };
+		42E42185228D557000DBC2E4 /* ArrayDeduplicateManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayDeduplicateManger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +151,6 @@
 			children = (
 				42011ED720C0CFE3009F607C /* ViewController.h */,
 				42011ED820C0CFE3009F607C /* ViewController.m */,
-				429B14E12160B9CD00F595FC /* DataRelated */,
 				427F201420C619B000F511B0 /* 1_数组的基础 */,
 				42011F0C20C0FAFC009F607C /* 2_数组的遍历 */,
 				427F201620C61A5500F511B0 /* 3_数组的最值:求和:平均值 */,
@@ -158,6 +160,8 @@
 				427F201020C6153A00F511B0 /* 7_字典的最值 */,
 				427F207720C6820800F511B0 /* 8_字典的排序 */,
 				429D333020C771F4006EA211 /* 9_排序小结 */,
+				429B14E12160B9CD00F595FC /* 10_数据转换和为空判断相关 */,
+				42E42172228D036E00DBC2E4 /* 11,数组去重 */,
 				42011F0920C0D9BE009F607C /* TimeManager.h */,
 				42011F0A20C0D9BE009F607C /* TimeManager.m */,
 				42011EDA20C0CFE3009F607C /* Main.storyboard */,
@@ -261,7 +265,7 @@
 			path = "8_字典的排序";
 			sourceTree = "<group>";
 		};
-		429B14E12160B9CD00F595FC /* DataRelated */ = {
+		429B14E12160B9CD00F595FC /* 10_数据转换和为空判断相关 */ = {
 			isa = PBXGroup;
 			children = (
 				429B14E22160BA0B00F595FC /* MCDataConversion.h */,
@@ -273,7 +277,7 @@
 				429B14E82160BA0B00F595FC /* MCDataSafety.h */,
 				429B14E52160BA0B00F595FC /* MCDataSafety.m */,
 			);
-			path = DataRelated;
+			path = "10_数据转换和为空判断相关";
 			sourceTree = "<group>";
 		};
 		429D333020C771F4006EA211 /* 9_排序小结 */ = {
@@ -285,6 +289,15 @@
 				429D333220C7722F006EA211 /* SortSummary.m */,
 			);
 			path = "9_排序小结";
+			sourceTree = "<group>";
+		};
+		42E42172228D036E00DBC2E4 /* 11,数组去重 */ = {
+			isa = PBXGroup;
+			children = (
+				42E42184228D557000DBC2E4 /* ArrayDeduplicateManger.h */,
+				42E42185228D557000DBC2E4 /* ArrayDeduplicateManger.m */,
+			);
+			path = "11,数组去重";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +446,7 @@
 				429D333620C7729A006EA211 /* SLPerson.m in Sources */,
 				429B14EB2160BA0C00F595FC /* MCDataNull.m in Sources */,
 				429B14EA2160BA0C00F595FC /* MCDataSafety.m in Sources */,
+				42E42186228D557000DBC2E4 /* ArrayDeduplicateManger.m in Sources */,
 				427F207A20C683B600F511B0 /* DicSortManager.m in Sources */,
 				42011ED620C0CFE3009F607C /* AppDelegate.m in Sources */,
 			);

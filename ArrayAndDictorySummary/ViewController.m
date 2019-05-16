@@ -13,6 +13,7 @@
 #import "DicExtremeManager.h"
 #import "DicSortManager.h"
 #import "SortSummary.h"
+#import "ArrayDeduplicateManger.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *testButton1;
@@ -105,4 +106,14 @@
 - (void)test6 {
     [SortSummary sortModelDemo];
 }
+
+- (IBAction)test7:(id)sender {
+     NSArray *originalArr = @[@1, @2, @3, @1, @3,@2];
+    NSLog(@"✅方法1：%@",[ArrayDeduplicateManger method1:originalArr]);
+    NSLog(@"✅方法2：%@",[ArrayDeduplicateManger method2:originalArr]);
+    NSLog(@"✅方法3：%@",[ArrayDeduplicateManger method3:originalArr]);
+    NSLog(@"✅方法4：%@",[ArrayDeduplicateManger method4:originalArr]);
+}
+
+
 @end
