@@ -2,7 +2,7 @@
 * ✅构造方法✅
 *
 * */
-public class constructionMethod {
+public class ConstructionMethod {
     public static void main(String[] args) {
         Person1 ming1 = new Person1();
         Person1 ming2 = new Person1("kk");

@@ -2,7 +2,7 @@
  * ✅方法✅
  *
  * */
-public class method {
+public class Method {
     public static void main(String[] args) {
         int age = 5;
         String name = "a";
