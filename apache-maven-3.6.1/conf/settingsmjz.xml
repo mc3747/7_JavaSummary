@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>D:/Program Files/apache-maven-3.6.3/repository</localRepository>
+  <pluginGroups/>
+  <servers>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++repo.dtyunxi.cn servers++++++++++++++++++++++++++++++++++++++++++++++++-->
+	<server> <id>repo.vmware</id> <username>admin</username>  <password>rycuj9</password> </server>
+    <server> <id>repo.dtyunxi.cn.dms</id>  <username>admin</username>  <password>Bnqc@2020</password> </server>
+    <server> <id>repo.dtyunxi.cn.snapshots</id>  <username>admin</username>  <password>Bnqc@2020</password> </server>
+    <server> <id>repo.dtyunxi.cn.public</id>  <username>admin</username>  <password>Bnqc@2020</password> </server>
+    <server> <id>repo.dtyunxi.cn.public.plugin</id>  <username>admin</username>  <password>Bnqc@2020</password> </server>
+	<server> <id>repo.bn.dms.cn.public</id>  <username>admin</username>  <password>Bnqc@2020</password> </server>
+	<server> <id>repo.bn.dms.cn.public.plugin</id>  <username>admin</username>  <password>Bnqc@2020</password> </server>
+  </servers>
+
+  <mirrors>
+    <mirror> <id>repo.dtyunxi.cn.dms</id>  <mirrorOf>central</mirrorOf>  <url>http://10.210.195.20:8090/repository/public</url> </mirror>
+	<mirror> <id>repo.bn.dms.cn.public</id>  <mirrorOf>central</mirrorOf>  <url>http://10.210.195.20:8090/repository/public-bn-dms-prod</url> </mirror>
+	
+  </mirrors>
+
+  <profiles>
+	<profile>
+        <id>repo.vmware</id>
+        <repositories>
+            <repository>
+                <id>central</id>
+                <url>http://192.168.134.129:8081/repository/maven-public/</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+        <pluginRepositories>
+            <pluginRepository>
+                <id>central</id>
+                <url>http://192.168.134.129:8081/repository/maven-public/</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </pluginRepository>
+        </pluginRepositories>
+    </profile>
+  
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++repo.dtyunxi.cn.snapshots repository profile++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <profile>
+      <id>repo.dtyunxi.cn.snapshots</id>
+      <activation> <property> <name>yunxi-repodev</name> </property> </activation>
+      <properties>
+        <deploy.repository.id>repo.dtyunxi.cn.snapshots</deploy.repository.id>  <deploy.env>dev</deploy.env>
+        <deploy.repository.url>http://10.210.195.20:8090/repository/yunxi-snapshots</deploy.repository.url>
+      </properties>
+      <repositories>
+        <repository>
+          <id>repo.dtyunxi.cn.snapshots</id>  <url>http://10.210.195.20:8090/repository/yunxi-snapshots</url>
+          <snapshots> <enabled>true</enabled> </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++repo.dtyunxi.cn public repository profile++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <profile>
+      <id>repo.dtyunxi.cn.public</id>
+      <activation> <property> <name>yunxi-repopublic</name> </property> </activation>
+      <repositories>
+        <repository>
+          <id>repo.dtyunxi.cn.public</id>  <url>http://10.210.195.20:8090/repository/yunxi-public/</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>repo.dtyunxi.cn.public.plugin</id>  <url>http://10.210.195.20:8090/repository/yunxi-public/</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+
+	<profile>
+      <id>repo.bn.dms.cn.public</id>
+      <activation> <property> <name>bn-dms-prod</name> </property> </activation>
+      <properties> 
+			<deploy.repository.id>repo.bn.dms.cn.public</deploy.repository.id>  
+			<deploy.env>prod</deploy.env>  
+			<deploy.repository.url>http://10.210.195.20:8090/repository/snapshots-bn-dms-prod/</deploy.repository.url> 
+	   </properties>
+      <repositories>
+        <repository>
+          <id>repo.bn.dms.cn.public</id>  <url>http://10.210.195.20:8090/repository/public-bn-dms-prod/</url>
+          <snapshots> <enabled>true</enabled> </snapshots>
+        </repository>
+      </repositories>
+	  <pluginRepositories>
+        <pluginRepository>
+          <id>repo.bn.dms.cn.public.plugin</id>  <url>http://10.210.195.20:8090/repository/public-bn-dms-prod/</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+	
+	
+	<profile>
+        <id>nexus</id>
+        <repositories>
+            <repository>
+                <id>central</id>
+                <url>http://repo1.maven.org/maven2</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+        <pluginRepositories>
+            <pluginRepository>
+                <id>central</id>
+                <url>http://repo1.maven.org/maven2</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </pluginRepository>
+        </pluginRepositories>
+    </profile>
+    <profile>
+        <id>edas.oss.repo</id>
+        <repositories>
+            <repository>
+                <id>edas-oss-central</id>
+                <name>taobao mirror central</name>
+                <url>http://edas-public.oss-cn-hangzhou.aliyuncs.com/repository</url>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+            </repository>
+            </repositories>
+        <pluginRepositories>
+            <pluginRepository>
+                <id>edas-oss-plugin-central</id>
+                <url>http://edas-public.oss-cn-hangzhou.aliyuncs.com/repository</url>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+            </pluginRepository>
+        </pluginRepositories>
+    </profile>
+	
+	
+  </profiles>
+
+		
+  <activeProfiles>
+
+    <!--+++++++++++++++++Active name: -Dyunxi-repodev++++++++++++++++++++++++++
+    <activeProfile>repo.dtyunxi.cn.snapshots</activeProfile>-->
+
+    <!--+++++++++++++++++Active name: -Dyunxi-repotest++++++++++++++++++++++++++-->
+    <!--activeProfile>repo.dtyunxi.cn.snapshots.test</activeProfile-->
+
+    <!--+++++++++++++++++Active name: -Dyunxi-repostage++++++++++++++++++++++++++-->
+    <!--activeProfile>repo.dtyunxi.cn.snapshots.stage</activeProfile-->
+
+    <!--activeProfile>repo.dtyunxi.cn.public</activeProfile-->
+    <activeProfile>repo.dtyunxi.cn.public</activeProfile>
+	
+
+    <activeProfile>nexus</activeProfile>
+    <activeProfile>edas.oss.repo</activeProfile>
+	
+  </activeProfiles>
+</settings>
